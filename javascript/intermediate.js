@@ -1,0 +1,348 @@
+// Arithmetic Operator = +, - , /, %, *, **
+
+// let marks1 = 45;
+// let marks2 = 54;
+
+// console.log("Addition : ", marks1 + marks2);
+// console.log("Substraction : ", marks2 - marks1);
+// console.log("Multiply : ", marks1 * marks2);
+// console.log("Divide : ", marks2 / marks1);
+// console.log("Remainder :", marks2 % marks1);
+// console.log("Exponentiation", 4 ** 3);
+
+// Assignment operator -> = , -=, +=, *=, /=, %=
+
+// let score = 3;
+
+// score = score + 4;
+// score += 4;
+
+// score = score - 2; // 3 - 2 -> 1
+// score -=  2; // 1 - 2
+// console.log(score); // -1
+
+// Comparison Operator -> ==, ===, !=, >=, <=
+
+// let a = 10;
+// let b = "10";
+
+// console.log(typeof a);
+// console.log(typeof b);
+
+// Interview question-  == vs ===
+
+// loosely checks -> == it just checks the value
+// console.log(a == b); //10 == "10"
+// // strictly checking , === checks the value and data type
+// console.log(a === b); // 10 === "10"
+
+// let x = 10;
+// let y = "30";
+
+// number + string
+// String Operator
+// console.log(x + y); //1030
+// console.log(x  - y)  // 30 - 10 -> 20
+
+// console.log(34 >= 45);
+// console.log(45 <= 30);
+// console.log(45 != 45);
+
+// Logical Operator  - &&, ||, !
+//
+// let age = 30;
+
+// && - both side should be true then only it will give you true otherwise it will give you false
+// console.log(age > 18 && age < 25);
+
+// // || - anyone side should true then you get true or false
+// console.log(age > 18 || age < 25);
+
+// *********************************************************************************
+// Arrays
+
+// There are two ways of creating arrays
+
+// 1st way of creating array
+// console.log(storeroom);
+
+// 2nd way of creating array
+// Constructor Array
+// let score = new Array(2, 5, 3, 2, 6, 7);
+// console.log(score);
+
+// let storeroom = ["Table", " Chairs", "Sofa", true, false, 50];
+
+// Array Methods
+
+// length to check the length of the array
+// console.log(storeroom.length);
+
+// console.log(storeroom[4]);
+
+// push -  insert the value at the end of the array
+
+// console.log(storeroom.push("study table"));
+// console.log(storeroom);
+
+// pop - removes the last element fromt the array
+// console.log(storeroom.pop())
+
+// console.log(storeroom);
+
+// shift - remove the first element form the array
+// console.log(storeroom.shift());
+// console.log(storeroom);
+
+// unshift will insert the value in the start of the array
+// console.log(storeroom.unshift("bat"));
+// console.log(storeroom);
+
+// storeroom[4] = "Vijay";
+// console.log(storeroom);
+
+//let newarray = ["Hello", "World"]
+
+ //console.log(newarray.join("+"))
+
+ //let a = [1, 2, 3];
+ //let b = ["Vijay", "Yashraj"];
+
+//console.log(a.concat(b));
+
+// push, pop, shift, unshift, concat, join
+
+// ******************************************************************************
+// 7th April 2026 - Tuesday
+
+// Array of object - JSON data
+
+//let users = [
+ //  { name: "Kavitha", isUser: true },
+  //{ name: "Asif", isUser: false },
+  //{ name: "Sai Ramana", isUser: true },
+  //{ name: "Meghana", isUser: false },
+   //{ name: "Naresh", isUser: false },
+ //];
+//let names = users.map((user) => user.isUser);
+ //console.log(names);
+
+// // console.log(users[1])
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let multiply = numbers.map(number => number * 3);
+
+// console.log(multiply);
+
+// Filter : is used to filter the records
+
+// let numbers = [2, 4, 5, 3, 7, 9, 11, 12];
+
+// let even = numbers.filter(number => number % 2 != 0)
+
+// console.log(even);
+
+ //let users = [
+  // { name: "A", active: false },
+  //{ name: "B", active: true },
+   //{ name: "C", active: true },
+ //];
+
+// let activeUsers = users.filter((user) => user.active);
+ //console.log(activeUsers.length);
+
+// Reduce  - Interviewer's favourite
+
+ //let my_cart = [
+  // { item: "Shirt", price: 699 },
+  // { item: "Pants", price: 899 },
+   //{ item: "Watch", price: 999 },
+   //{ item: "Shoes", price: 1499 },
+ //];
+
+ 
+ //let total = my_cart.reduce((sum, item) => sum + item.price, 0);
+ //console.log(total);
+
+// slice
+
+ //let items = [1, 2, 4, 5, 6];
+
+ //let page1 = items.slice(0, 4);
+//let page1 = items.slice(-2);
+//console.log(page1);
+
+// let users = [
+//   { id: 1, name: "A" },
+//   { id: 2, name: "B" },
+//   { id: 3, name: "C" },
+//   { id: 4, name: "D" },
+// ];
+
+// find method will be used excessively in database
+// let user = users.find((user) => user.id === 4);
+// console.log(user);
+
+ //let data = [1, [2, "Sharath"], [4, 5, 3, 4]];
+
+ //console.log(data.flat());
+
+// let randomNum = [1, 23, 33, 111, 22, 34, 445, 55, 22, 556];
+
+// console.log(randomNum.sort((a, b) => a - b));
+
+// Task : Splice, some, every, includes, findIndex, at, charAt - Minimum 5 completed
+
+// *************************************************************************
+// Conditional Statements
+
+// if statement
+
+// let age = 1;
+
+// if (age > 18) {
+//   console.log("you can drive and get license");
+// } else if (age === 18) {
+//   console.log("you can drive but can get learning license");
+// } else {
+//   console.log("you cannot drive, you are a kid");
+// }
+
+// let marks = 95;
+
+// if (marks > 90) {
+//   console.log("grade A");
+// } else if (marks > 80) {
+//   console.log("grade B");
+// } else if (marks > 70) {
+//   console.log("grade C");
+// } else if (marks > 60) {
+//   console.log("grade D");
+// } else {
+//   console.log("sorry you are fail");
+// }
+
+// Switch Statement
+
+// let day = "Sunday";
+
+// switch (day) {
+//   case "Monday":
+//     console.log("start the work");
+//     break;
+//   case "Tuesday":
+//     console.log("you just survived one day");
+//     break;
+//   case "Wednesday":
+//     console.log("there are two more days to office");
+//     break;
+//   case "Thursday":
+//     console.log("Yayy! one more day to weekend");
+//     break;
+//   case "Friday":
+//     console.log("Finally friday has arrived, tomorrow is off");
+//     break;
+//   default:
+//     console.log("please mention week days only");
+// }
+
+// Ternary operator only works in javascript
+
+// let age = 12
+
+// let results = age >= 18 ? "yes! you are an adult" : "No! you are a teenager";
+// console.log(results);
+
+// ***********************************************************************************
+
+// Control flow or loops
+// loops are used to repeat a block of code automatically until the condition is saatisfied
+
+// for (let index = 50; index > 1; index--) {
+//   console.log(index);
+// }
+
+// let i = 1;
+
+// while(i < 100){
+//     console.log(i);
+//     // increment / decrement is very important in while loop else it will hang your system
+//     i++;
+
+// }
+
+// do while
+
+// let num = 10;
+
+// do {
+//   console.log("Hello from do...while loop");
+// } while (num < 5);
+
+// for of and for in
+
+// for...in loop
+// used to loop over the keys (indexes / property names), it can be used with objects and array
+
+// const student = {
+//   // key :  value
+//   name: "Rahul",
+//   age: 22,
+//   course: "MERN",
+// };
+
+// for (let key in student) {
+//   //   console.log(key);
+//   //   console.log(student[key]);
+
+//   console.log(key + " :" + student[key]);
+// }
+
+// let fruits = ["apple", "banana", "grapes"];
+
+// for (let index in fruits) {
+//   //   console.log(index);
+//   console.log(fruits[index]);
+// }
+
+// Everything in Javascript is actually an object only....
+// for of loop  is used to loop overs "VALUES" directly....Arrays and Strings
+
+// const price = [100, 200, 330, 334, 550];
+
+// for (const p of price) {
+//   console.log("Price is :" + p);
+// }
+
+// let my_name = "Purushottam";
+
+// for (let char of my_name) {
+//   console.log(char);
+// }
+
+// For Each
+
+// const users = ["Chandana", " Aathi", "Asif", "Meghana", "Sai Ramana"];
+
+// users.forEach((user) => {
+//   console.log("Session started please start joining, " + user);
+// });
+
+const orders = [
+  { id: 1, item: "Printed Shirt", price: 699 },
+  { id: 2, item: "Cap", price: 299 },
+  { id: 3, item: "Shoes", price: 799 },
+];
+
+// orders.forEach((order) => {
+//   //  `` - backticks (string interpolation)
+//   console.log(`Order ${order.id} : ${order.item} costs ${order.price}`);
+// });
+
+// orders.forEach((order) => {
+//   console.log(order.id + order.price);
+//   console.log(`${order.id} and ${order.item}`);
+// });
+
+
